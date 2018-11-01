@@ -87,5 +87,3 @@ weex run android          //然后启动
 
 若有其他版本兼容问题，参考 https://www.jianshu.com/p/b106a7bb4437
 
-#### 六、EROS
-
