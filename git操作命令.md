@@ -55,6 +55,8 @@ git push origin --delete 分支名   //删除远程库
 
 ```javascript
 git reset --hard HEAD    //撤销merge
+//或
+git merge --abort
 ```
 
 - 然后执行提交远程或更新到本地就可以了
@@ -69,5 +71,19 @@ git log
 git reset --hard commitid
 //将修改push到远程服务器分支上
 git push -f -u origin 分支名
+```
+
+### 9.git的分支与合并
+
+```
+//开发分支 bugFix_develop 合并到 develop 分支
+
+//处于develop分支
+//更新develop代码
+git pull origin develop
+//合并bugFix_develop分支
+git merge bugFix_develop
+//本地合并后提交到远程
+git push
 ```
 
